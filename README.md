@@ -5,7 +5,7 @@ java.restful
 
 ### 使用
 ** pom依赖 **  
-https://github.com/imadding/maven/tree/master/com/madding/parent.all/1.0.0/pom.xml
+- https://github.com/aqnotecom/com.aqnote.java.codestyle/tree/master/maven/com/aqnote/parent.all/1.0.0/pom.xml
 
 下载改pom后用maven 安装到本地
 > mvn install
