@@ -10,7 +10,7 @@
 	<groupId>com.aqnote.shared</groupId>
 	<artifactId>java.restful</artifactId>
 	<packaging>war</packaging>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<name>java.restful Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 
@@ -164,16 +164,5 @@
       </plugin>
     </plugins>
 	</build>
-
-	<distributionManagement>
-		<repository>
-			<id>aqnote-release</id>
-			<url>http://aqnote.local:8081/repository/aqnote-release</url>
-		</repository>
-		<snapshotRepository>
-			<id>aqnote-snapshot</id>
-			<url>http://aqnote.local:8081/repository/aqnote-snapshot</url>
-		</snapshotRepository>
-	</distributionManagement>
 
 </project>
