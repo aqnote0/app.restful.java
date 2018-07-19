@@ -3,12 +3,8 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
-	<bean id="myService" class="com.madding.shared.restful.example.MyServiceImpl" />
+	<bean id="myService" class="com.aqnote.demo.restful.MyServiceImpl" />
 
-	<bean id="partnerService" class="com.madding.shared.restful.example.PartnerServiceImpl" />
-
-	<bean id="restfulSpringAware" class="com.madding.shared.restful.spring.RestfulSpringAware" />
-
-
+	<bean id="partnerService" class="com.aqnote.demo.restful.PartnerServiceImpl" />
 
 </beans>

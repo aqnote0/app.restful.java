@@ -3,6 +3,6 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
 	
-	<bean id="com.madding.restfull.findcertbycertid" class="com.madding.shared.restful.example.FindCertByCertIdRestFul" />
+	<bean id="com.aqnote.restful.findcertbycertid" class="com.aqnote.demo.restful.FindCertByCertIdRestFul" />
 
 </beans>

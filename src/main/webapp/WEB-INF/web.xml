@@ -24,7 +24,7 @@
 	
 	<filter>
 		<filter-name>gatewayFilter</filter-name>
-		<filter-class>com.madding.shared.restful.filter.GatewayFilter</filter-class>
+		<filter-class>com.aqnote.shared.restful.filter.GatewayFilter</filter-class>
 	</filter>
 	<filter-mapping>
 		<filter-name>gatewayFilter</filter-name>
