@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<artifactId>parent.all</artifactId>
-		<groupId>com.madding</groupId>
-		<version>1.0.0</version>
+		<groupId>com.aqnote</groupId>
+		<version>1.0.3</version>
 	</parent>
 
-	<groupId>com.madding.shared</groupId>
+	<groupId>com.aqnote.shared</groupId>
 	<artifactId>java.restful</artifactId>
 	<packaging>war</packaging>
 	<version>1.0.0-SNAPSHOT</version>
@@ -30,7 +30,6 @@
 	</properties>
 
 	<dependencies>
-	
 		<!-- slf4j_log interface -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -68,39 +67,39 @@
 			<version>${slf4j_version}</version>
 		</dependency>
 		
-			<!-- apache common -->
-			<dependency>
-			    <groupId>commons-lang</groupId>
-			    <artifactId>commons-lang</artifactId>
-				<version>${apache_commons_lang}</version>
-			</dependency>
-			<dependency>
-				<groupId>commons-io</groupId>
-				<artifactId>commons-io</artifactId>
-				<version>${apache_commons_io}</version>
-			</dependency>
-			<dependency>
-				<groupId>commons-net</groupId>
-				<artifactId>commons-net</artifactId>
-				<version>${apache_commons_net}</version>
-			</dependency>
-			<dependency>
-				<groupId>commons-codec</groupId>
-				<artifactId>commons-codec</artifactId>
-				<version>${apache_commons_codec}</version>
-			</dependency>
-			<dependency>
-				<groupId>commons-daemon</groupId>
-				<artifactId>commons-daemon</artifactId>
-				<version>${apache_commons_daemon}</version>
-			</dependency>
+		<!-- apache common -->
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>${apache_commons_lang}</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>${apache_commons_io}</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-net</groupId>
+			<artifactId>commons-net</artifactId>
+			<version>${apache_commons_net}</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+			<version>${apache_commons_codec}</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-daemon</groupId>
+			<artifactId>commons-daemon</artifactId>
+			<version>${apache_commons_daemon}</version>
+		</dependency>
 		
 		<!-- fastjson -->
-			<dependency>
-				<groupId>com.alibaba</groupId>
-				<artifactId>fastjson</artifactId>
-			    <version>${fastjson_version}</version>
-			</dependency>
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>${fastjson_version}</version>
+		</dependency>
 
 		<!-- servlet -->
 		<dependency>
@@ -117,13 +116,12 @@
 			<version>${spring_version}</version>
 		</dependency>
 		
-			<!-- velocity  -->
-			<dependency>
-			    <groupId>org.apache.velocity</groupId>
-			    <artifactId>velocity</artifactId>
-				<version>${velocity_version}</version>
-			</dependency>
-		
+		<!-- velocity  -->
+		<dependency>
+			<groupId>org.apache.velocity</groupId>
+			<artifactId>velocity</artifactId>
+			<version>${velocity_version}</version>
+		</dependency>
 
 		<!-- spring test -->
 		<dependency>
@@ -149,7 +147,6 @@
 
 	<build>
 		<finalName>java.restful</finalName>
-		
 		<plugins>
       <plugin>
         <groupId>org.apache.tomcat.maven</groupId>
@@ -167,5 +164,16 @@
       </plugin>
     </plugins>
 	</build>
+
+	<distributionManagement>
+		<repository>
+			<id>aqnote-release</id>
+			<url>http://aqnote.local:8081/repository/aqnote-release/</url>
+		</repository>
+		<snapshotRepository>
+			<id>aqnote-snapshot</id>
+			<url>http://aqnote.local:8081/repository/aqnote-snasphot/</url>
+		</snapshotRepository>
+	</distributionManagement>
 
 </project>
