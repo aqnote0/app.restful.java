@@ -165,4 +165,15 @@
     </plugins>
 	</build>
 
+	<distributionManagement>
+		<repository>
+			<id>aqnote-releases</id>
+			<url>http://aqnote.local:8081/repository/aqnote-release</url>
+		</repository>
+		<snapshotRepository>
+			<id>aqnote-snapshots</id>
+			<url>http://aqnote.local:8081/repository/aqnote-snapshot</url>
+		</snapshotRepository>
+	</distributionManagement>
+
 </project>
